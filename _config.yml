@@ -5,21 +5,23 @@ title: Lions Den CNX
 description:  Profile of a private health and wellbeing club. 
 
 # A brief blurb about yourself
-content: Move heavy thing make sad head noises quieter 
+content: Train with us in Chiang Mai, Thailand.
 
 # Add your social links
 social:
+  - platform: line official
+    url: https://lin.ee/E7P1Tfz
   - platform: instagram
     url: https://instagram.com/lionsdencnx
-  - platform: facebook
-    url: https://facebook.com/lionsdencnx
+  - platform: map
+    url: https://maps.app.goo.gl/qEYyWWvP2nVe9auX7
 
 # General settings
 url: http://lionsdencnx.com
 # baseurl: "/uni" 
 markdown: kramdown
-sharing_image: share.jpg
-#google_analytics: "UA-58263416-1" # google analytics tracking
+sharing_image: half-sm.jpg
+google_analytics: "G-XDZJ0XV2JH" # google analytics tracking
 
 #### LAYOUT OPTIONS #####
 
