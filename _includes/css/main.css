@@ -741,3 +741,69 @@ footer .footer-below {
         font-size: 0.9em;
     }
 }
+/* Map Section Styles */
+.map-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.map-section h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.map-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.mapImg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mapImg:hover {
+    transform: scale(1.02);
+}
+
+.map-caption {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Zoom functionality for mobile */
+@media (max-width: 768px) {
+    .mapImg.zoomed {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2);
+        z-index: 1000;
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .mapImg.zoomed:hover {
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+/* Desktop zoom on hover */
+@media (min-width: 769px) {
+    .mapImg:hover {
+        transform: scale(1.1);
+        z-index: 10;
+        position: relative;
+    }
+}
