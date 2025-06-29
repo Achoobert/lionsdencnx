@@ -1,32 +1,65 @@
-# Your Name or Company
-title: Lions Den CNX
+# Site settings
+title: Game Tree Cafe
+email: your-email@domain.com
+url: https://gametree.cafe
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+keywords: "your keywords, separated by commas"
+skills: "Chiang Mai's Cozy Corner for Community & Board Games!"
+meta_author: LastName FirstName
+favicon: assets/img/favicon.png
 
-# Description of your website. This is used for social sharing.
-description:  Profile of a private health and wellbeing club. 
+# Google webmaster tools
+google_verify:
 
-# A brief blurb about yourself
-content: Train with us in Chiang Mai, Thailand.
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-# Add your social links
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Stuart Shannon
+  location: Chiang Mai, Thailand
+  social:  Social Media
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - platform: line official
-    url: https://lin.ee/E7P1Tfz
-  - platform: instagram
-    url: https://instagram.com/lionsdencnx
-  - platform: map
-    url: https://maps.app.goo.gl/qEYyWWvP2nVe9auX7
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url: https://www.facebook.com/GameTreeCafe
+  - title: line
+    url: https://line.me/R/ti/p/@420ohpea
 
-# General settings
-url: http://lionsdencnx.com
-# baseurl: "/uni" 
+# Postal address (add as many lines as necessary)
+address:
+  - line: 200/14, B-Avenue 
+  - line: M.1, Suthep Rd.
+  - line: Chiang Mai 50200
+
+# Build settings
 markdown: kramdown
-sharing_image: half-sm.jpg
-google_analytics: "G-XDZJ0XV2JH" # google analytics tracking
+permalink: pretty
 
-#### LAYOUT OPTIONS #####
-
-# Half layout
-half_side: right
-
-# Full layout
-full_text_position: right # left, right or center
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
