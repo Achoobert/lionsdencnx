@@ -10,11 +10,6 @@ header,
    background: #181818;
 }
 
-hr.star-light,
-.star-primary {
-   border-color: #e10600;
-}
-
 a,
 a:visited {
    color: #e10600;
@@ -26,31 +21,39 @@ a:focus {
    background: #e10600;
 }
 
-img.img-responsive[alt="Lions Den CNX Logo"],
-img.img-responsive[alt="profile-pic"],
-img.img-responsive[src*="profile"] {
+img.img-responsive,
+.img-fluid {
    border-radius: 50%;
-   border: 4px solid #e10600;
+   border: 3px solid #e10600;
    background: #222;
-   box-shadow: 0 0 24px #e1060044;
+   max-width: 220px;
+      margin: 1.5rem auto;
+      display: block;
+   }
+   
+   .facility-info {
+      margin: 1.5rem 0;
+      color: #fff;
+      text-align: center;
 }
 
 .socialLinks {
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
-   gap: 1rem;
-   margin: 2rem 0;
+   gap: 0.5rem;
+      margin: 1.5rem 0;
 }
 
 .socialLinks__link {
    display: inline-block;
-   padding: 0.75em 1.5em;
+   padding: 0.5em 1.2em;
    border-radius: 2em;
    background: #222;
-   color: #fff;
+   color: #e10600;
    border: 2px solid #e10600;
+   font-weight: 600;
    text-transform: uppercase;
-   font-weight: bold;
    letter-spacing: 0.05em;
    transition: background 0.2s, color 0.2s, border 0.2s;
 }
@@ -62,53 +65,14 @@ img.img-responsive[src*="profile"] {
    border-color: #fff;
 }
 
-.socialLInk__line {
-   background: #06c755;
-   color: #fff;
-   border-color: #06c755;
-}
+@media (max-width: 600px) {
+   .socialLinks {
+      flex-direction: column;
+      align-items: center;
+   }
 
-.socialLInk__line:hover {
-   background: #fff;
-   color: #06c755;
-}
-
-.socialLInk__instagram {
-   background: #e4405f;
-   color: #fff;
-   border-color: #e4405f;
-}
-
-.socialLInk__instagram:hover {
-   background: #fff;
-   color: #e4405f;
-}
-
-.socialLInk__map {
-   background: #4285f4;
-   color: #fff;
-   border-color: #4285f4;
-}
-
-.socialLInk__map:hover {
-   background: #fff;
-   color: #4285f4;
-}
-
-.btn-outline {
-   margin-top: 15px;
-   border: solid 2px #e10600;
-   font-size: 20px;
-   color: #e10600;
-   background: #222;
-   transition: all .3s ease-in-out;
-}
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-   border: solid 2px #fff;
-   color: #fff;
-   background: #e10600;
+      img.img-responsive,
+      .img-fluid {
+         max-width: 140px;
+      }
 }

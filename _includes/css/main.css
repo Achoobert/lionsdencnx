@@ -16,18 +16,6 @@ p.small {
     font-size: 16px;
 }
 
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0;
-    color: #{{ site.color.primary }
-}
-
-;
-}
-
 h1,
 h2,
 h3,
@@ -66,26 +54,16 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }
-}
-
-;
+   color: #fff;
 }
 
 hr.star-primary {
-    border-color: #{{ site.color.secondary }
-}
-
-;
+   border-color: #e10600;
 }
 
 hr.star-primary:after {
-    color: #{{ site.color.secondary }
-}
-
-;
-background-color: #fff;
+   color: #e10600;
+      background-color: #fff;
 }
 
 .img-centered {
@@ -95,20 +73,30 @@ background-color: #fff;
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }
-}
-
-;
+   background: #181818;
+      width: 100%;
+      min-width: 100%;
+      margin: 0;
+      padding: 0;
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+   width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding-left: 15px;
+      padding-right: 15px;
 }
 
 header img {
     display: block;
     margin: 0 auto 20px;
+   max-width: 100%;
+      max-height: 200px;
+      height: auto;
+      width: auto;
 }
 
 header .intro-text .name {
@@ -124,6 +112,46 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+/* Mobile responsive styles */
+@media(max-width: 767px) {
+   header {
+      width: 100vw;
+      min-width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+   }
+
+   header .container {
+      padding-top: 60px;
+      padding-bottom: 30px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   header .intro-text .name {
+      font-size: 1.8em;
+   }
+
+   header .intro-text .skills {
+      font-size: 1.1em;
+   }
+
+   /* Ensure gallery section uses full width on mobile */
+   .gallery-section {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0 5px;
+   }
+
+   .frame {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+   }
+}
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -197,10 +225,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #{{ site.color.primary }
-}
-
-;
+   background: #181818;
 }
 
 @media(max-width:767px) {
@@ -230,17 +255,10 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-
-    background: rgba({
-            {
-            site.color.primary-rgb
-        }
-    }
-
-    , .9);
--webkit-transition: all ease .5s;
--moz-transition: all ease .5s;
-transition: all ease .5s;
+   background: rgba(225, 6, 0, 0.9);
+      -webkit-transition: all ease .5s;
+      -moz-transition: all ease .5s;
+      transition: all ease .5s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -298,14 +316,6 @@ transition: all ease .5s;
         max-width: 32%;
     }
 }
-
-/* A large grid might need four columns on widescreen layouts */
-/* @media (min-width: 1380px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 23.5%;
-      max-width: 23.5%;
-    }
-  } */
 
 .btn-outline {
     margin-top: 15px;
@@ -374,10 +384,7 @@ transition: all ease .5s;
 }
 
 .floating-label-form-group-with-focus label {
-    color: #{{ site.color.primary }
-}
-
-;
+   color: #e10600;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -394,10 +401,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #{{ site.color.secondary }
-}
-
-;
+   background-color: #333;
 }
 
 footer .footer-col {
@@ -406,10 +410,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #{{ site.color.secondary-dark }
-}
-
-;
+   background-color: #222;
 }
 
 .btn-social {
@@ -493,33 +494,24 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #{{ site.color.secondary }
-}
-
-;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
+   background-color: #333;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #{{ site.color.secondary }
-}
-
-;
--webkit-transform: rotate(90deg);
--ms-transform: rotate(90deg);
-transform: rotate(90deg);
+   background-color: #333;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }
-}
-
-!important;
+   background-color: #222 !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -527,4 +519,148 @@ transform: rotate(90deg);
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+}
+/* Gallery Section Styles */
+.gallery-section {
+   margin: 2rem 0;
+   padding: 0 1rem;
+}
+
+.frame {
+   max-width: 800px;
+   margin: 0 auto;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery {
+   width: 100%;
+   height: 400px;
+}
+
+.gallery-cell {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #f8f9fa;
+}
+
+.gallery-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 4px;
+}
+
+/* Flickity Custom Styles */
+.flickity-button {
+   background: rgba(0, 0, 0, 0.6);
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   transition: all 0.3s ease;
+}
+
+.flickity-button:hover {
+   background: rgba(0, 0, 0, 0.8);
+   transform: scale(1.1);
+}
+
+.flickity-button:focus {
+   outline: none;
+   box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.3);
+}
+
+.flickity-page-dots {
+   bottom: 10px;
+}
+
+.flickity-page-dots .dot {
+   background: rgba(255, 255, 255, 0.6);
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   margin: 0 4px;
+   transition: all 0.3s ease;
+}
+
+.flickity-page-dots .dot.is-selected {
+   background: #e10600;
+   transform: scale(1.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+   .gallery {
+      height: 300px;
+   }
+
+   .gallery-section {
+      padding: 0 0.5rem;
+   }
+
+   .flickity-button {
+      width: 35px;
+      height: 35px;
+   }
+}
+
+@media (max-width: 480px) {
+   .gallery {
+      height: 250px;
+   }
+}
+
+/* Mobile zoom functionality */
+@media (max-width: 768px) {
+   .gallery-image.zoomed {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      height: 90vh;
+      z-index: 9999;
+      object-fit: contain;
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+   }
+}
+/* Force full width for specific class on mobile */
+@media (max-width: 768px) {
+
+    .lmysfwybj,
+    .idc0_350,
+    .lmysfwybj.idc0_350 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Additional mobile width fixes for any similar dynamic classes */
+@media (max-width: 768px) {
+
+    [class*="lmysfwybj"],
+    [class*="idc0_350"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
 }
