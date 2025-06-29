@@ -33,24 +33,20 @@ color:
 
 # Footer settings
 footer:
-  copyright: Stuart Shannon
+  copyright: LionsDenCNX 
   location: Chiang Mai, Thailand
   social:  Social Media
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url: https://www.facebook.com/GameTreeCafe
-  - title: line
-    url: https://line.me/R/ti/p/@420ohpea
+  - title: instagram
+    url: https://www.instagram.com/lionsdencnx
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 200/14, B-Avenue 
-  - line: M.1, Suthep Rd.
-  - line: Chiang Mai 50200
+  - line: Mu Ban World Cup Ln
+  - line: Nong Kwai, Hang Dong District
+  - line: Chiang Mai 50230
 
 # Build settings
 markdown: kramdown
