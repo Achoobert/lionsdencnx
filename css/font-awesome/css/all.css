@@ -6459,8 +6459,8 @@ readers do not read off random characters that represent icons */
 .fa-aviato:before {
   content: "\f421"; }
 
-.fa-aws:before {
-  content: "\f375"; }
+/* .fa-aws:before {
+  content: "\f375"; } */
 
 .fa-bandcamp:before {
   content: "\f2d5"; }
